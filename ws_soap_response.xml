@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Body>
+        <ns:queryExampleResponse>
+            <return>
+                <resultCode>0</resultCode>
+                <resultDesc>Success</resultDesc>
+                <variables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+            </return>
+        </ns:queryExampleResponse>
+    </soapenv:Body>
+</soapenv:Envelope>

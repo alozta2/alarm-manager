@@ -1,0 +1,27 @@
+#!/bin/ksh
+machine=`uname -a | cut -d ' ' -f 2`
+from=`whoami`@$machine.example.com.tr
+{
+echo "HELO $machine"
+#sleep 3
+echo "MAIL From:<$from>"
+#sleep 3
+echo "RCPT To:<alarm@example.com>"
+#sleep 3
+echo DATA
+echo "From:<$from>"
+echo "To:alarm@example.com"
+echo "Subject:$1"
+echo
+if [ "$2" != "" ] 
+then
+echo "$2"
+else
+while read line
+do
+       echo $line
+done
+fi
+echo .
+echo QUIT
+} | telnet outlook.example.local 25

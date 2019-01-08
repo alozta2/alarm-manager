@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+       <v2:Authentication v2:user="" v2:password="" v2:sessionid="" v2:serviceid=""/>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v2:queryExample>
+         <msisdn>9999999999</msisdn>
+      </v2:queryExample>
+   </soapenv:Body>
+</soapenv:Envelope>
